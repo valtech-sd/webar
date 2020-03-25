@@ -1,0 +1,18 @@
+{
+  "name": "webar",
+  "version": "1.0.0",
+  "description": "WebAR Demo",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm docs/*",
+    "start": "echo \"Local Network Address: \"; ipconfig getifaddr en1; echo \":1234\"; parcel index.html --https -d docs",
+    "build": "parcel build index.html -d docs"
+  },
+  "author": "Matthew Morey",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-asset-copier": "^1.0.0"
+  },
+  "assetsPath": "staticAssets/"
+}
