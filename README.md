@@ -10,14 +10,12 @@ This project utilizes [AFrame](https://aframe.io) and [AR.js](https://github.com
 
 # Contributing
 
-To develop locally run:
+This project is hosted on Github Pages and is using Jekyll to build the site. It is recommended that you use rbenv for your Ruby and GEM environment. Here is a decent [guide](https://jekyllrb.com/docs/installation/) if you need help setting up Ruby.
 
-`$ npm run start`
+To set up your development environment first run the following from the project root directory:
 
-To delte build files and artifacts:
+`$ bundle install`
 
-`$ npm run clean`
+To build the site and make it available on a local server:
 
-To produce a build for hosting:
-
-`$ npm run build`
+`$ bundle exec jekyll serve`
