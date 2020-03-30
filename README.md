@@ -19,3 +19,8 @@ To set up your development environment first run the following from the project 
 To build the site and make it available on a local server:
 
 `$ bundle exec jekyll serve`
+
+In order to achieve camera access when running on localhost, you need an HTTPS certificate. You can build the certificate following the 'with Jekyll' instructions [here](https://dev.to/remotesynth/running-ssl-on-localhost-42ol).
+Once you have generated the localhost.key and localhost.crt files in the project directory, you can then run:
+
+`$ bundle exec jekyll serve --ssl-key localhost.key --ssl-cert localhost.crt`
