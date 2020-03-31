@@ -1,1 +1,4 @@
 host: 0.0.0.0
+sass:
+  style: compact # possible values: nested expanded compact compressed
+  sass_dir: assets/css

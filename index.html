@@ -1,3 +1,6 @@
+---
+
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,33 +13,97 @@
 	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 	<meta http-equiv="pragma" content="no-cache" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
-	<link rel="stylesheet" href="main.css" />
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">-->
+	<link rel="stylesheet" href="assets/css/main.css" />
 	<script src="index.js"></script>
 </head>
 <body>
 
-	<h1>WebAR Demo</h1>
-	<p>With modern smartphones it is now possible to deliver performant AR experiences from the browser using web technologies.</p>
-	<p>If you combine this with QR codes you can deliver cross-browser AR experiences with very low user friction.</p>
+	<section class="section-case">
 
-	<p>Example use cases:</p>
-	<ul>
-		<li>A customer walks into a museum, besides each artifact is a QR code, scanning the QR code brings up a 3D animation in AR of the artifact.</li>
-		<li>A shopper sees a mannequin with a cool jacket, she scans a QR code which launches an AR experience of the jacket but with the ability to select other colors. Maybe the AR experience helps set the mode my showing snow falling on the jacket.</li>
-		<li>lorem ipsum</li>
-	</ul>
+		<div class="header">
+			{% include valtech-logo.html %}
+		</div>
 
-	<p>In each example above the user never has to install an app and never has to type in a URL. On iOS and Android a QR scanner is now built in to the stock camera app.</p>
 
-	<h2>Retail Demo</h2>
+		<div class="container">
 
-	<h3>Step 1</h3>
-	<p>Set up a mannequin or clothes rack with sample jacket. Print out this <a href="assets/qr-code.png">QR code</a> and place it next to the jacket.</p>
-	<a href="assets/qr-code.png"><img src="assets/qr-code.png"/ width=600></a>
+			<div class="bg">
+				<a href="client.html">
+					<h1>WebAR Demo</h1>
+				</a>
+			</div>
 
-	<h3>Step 2</h3>
-	<p>Launch the <a href="client.html">experience</a> by scanning the QR code with a smartphone.</p> 
+
+			<div class="info">
+				<div class="info__smartphones">
+					<div class="svg-container">
+						<img src="assets/images/phone-logo.svg" />
+					</div>
+					<div class="desc-container">
+						<p>With modern smartphones it is now possible to deliver performant AR experiences from the browser using web technologies.</p>
+					</div>
+				</div>
+				<div class="info__codes">
+					<div class="svg-container">
+						<img src="assets/images/codes-logo.svg" />
+					</div>
+					<div class="desc-container">
+						<p>If you combine this with QR codes you can deliver cross-browser AR experiences with very low user friction.</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</section>
+
+	<section class="section-qrcode">
+
+		<div class="text-container">
+			<h2>Example use cases:</h2>
+			<ul>
+				<li>A customer walks into a museum, besides each artifact is a QR code, scanning the QR code brings up a 3D animation in AR of the artifact.</li>
+				<li>A shopper sees a mannequin with a cool jacket, she scans a QR code which launches an AR experience of the jacket but with the ability to select other colors. Maybe the AR experience helps set the mode my showing snow falling on the jacket.</li>
+			</ul>
+
+			<p>In each example above the user never has to install an app and never has to type in a URL. On iOS and Android a QR scanner is now built in to the stock camera app.</p>
+
+		</div>
+		<div class="qrcode-container">
+			<a href="assets/images/qr-code.png">
+				<img src="assets/images/qr-code.png" />
+			</a>
+		</div>
+
+	</section>
+
+	<section class="section-demo">
+
+		<div class="demo__title">
+			<h1>Retail Demo</h1>
+		</div>
+
+		<div class="step-container step-container__step1">
+			<h2>Step 1</h2>
+			<p>Set up a mannequin or clothes rack with sample jacket. Print out this <a href="assets/images/qr-code.png">QR code</a> and place it next to the jacket.</p>
+			<div class="bg"></div>
+		</div>
+
+		<div class="step-container step-container__step2">
+			<h2>Step 2</h2>
+			<p>Launch the <a href="client.html">experience</a> by scanning the QR code with a smartphone.</p>
+			<div class="bg"></div>
+		</div>
+
+	</section>
+
+
+
+
 
 </body>
 </html>
