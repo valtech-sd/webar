@@ -1,0 +1,166 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "typography";
+
+html {
+  cursor: auto;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 15%;
+  margin: 5rem 0 0 5rem;
+}
+
+.section-case .container {
+  margin-top: 3vh;
+}
+
+.bg {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 0;
+}
+
+.section-case .bg {
+  background-image: url("../images/bg-header.png");
+  padding-top: 35.78%; // image height / width * containerWidth <- currently 80%
+}
+
+.bg h1 {
+  color: white;
+  text-decoration: underline;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-case .container .info,
+.info__smartphones,
+.info__codes,
+.section-qrcode
+{
+  display: flex;
+}
+
+.section-case .container .info {
+  margin: 2vh 0;
+}
+
+.info__smartphones
+{
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.info__codes {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.info img {
+  display: block;
+}
+
+.info p {
+  font-weight: bold;
+}
+
+.info .svg-container {
+
+}
+
+.info .desc-container {
+  width: 50%;
+  padding: 2rem;
+}
+
+
+.section-qrcode {
+  background-color: black;
+  padding: 7vh 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-qrcode .text-container {
+  color: white;
+  justify-content: flex-end;
+  width: 30%;
+  margin: 3rem 5rem;
+
+}
+
+.section-qrcode .qrcode-container {
+  justify-content: flex-start;
+  width: 25%;
+  height: fit-content;
+  margin: 3rem 5rem;
+}
+
+.section-qrcode .text-container li {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.section-qrcode .text-container p {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.qrcode-container img {
+  width: 100%;
+  display: block;
+}
+
+.section-demo {
+  margin: 5vh 0;
+}
+
+.section-demo .step-container {
+  margin-bottom: 10vh;
+}
+
+.section-demo .step-container__step1 .bg {
+  background-image: url("../images/bg-step1.png");
+  padding-top: 54.83%; // image height / width * containerWidth <- currently 80%
+  margin: 5vh 0;
+}
+
+.section-demo .step-container__step2 .bg {
+  background-image: url("../images/bg-step2.png");
+  padding-top: 54.83%; // image height / width * containerWidth <- currently 80%
+  margin: 5vh 0;
+}
+
+.demo__title h1 {
+  font-size: 3.5rem;
+  margin: 0 0 0 8%;
+  line-height: 1;
+}
+
+.section-demo h2 {
+  margin: 5vh 0 0 8%;
+}
+
+.section-demo p {
+  margin-left: 8%;
+}
